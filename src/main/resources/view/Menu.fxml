@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gudang.controller.MenuController">
+   <children>
+      <Label text="Menu Utama"><font><Font name="System Bold" size="24.0" /></font></Label>
+      <Button onAction="#handleManajemenBarang" prefWidth="200.0" text="Manajemen Barang" />
+      <Button onAction="#handleManajemenSupplier" prefWidth="200.0" text="Manajemen Supplier" />
+      <Button onAction="#handleManajemenCustomer" prefWidth="200.0" text="Manajemen Customer" />
+   </children>
+</VBox>
