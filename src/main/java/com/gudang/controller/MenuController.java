@@ -17,7 +17,17 @@ public class MenuController {
         stage.setScene(new Scene(root));
         stage.show();
     }
-    
-    @FXML private void handleManajemenSupplier() {}
-    @FXML private void handleManajemenCustomer() {}
+
+    @FXML 
+    private void handleManajemenSupplier() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Supplier.fxml"));
+        Parent root = loader.load();
+        Stage stage = new Stage();
+        stage.setTitle("Manajemen Supplier");
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+    @FXML 
+    private void handleManajemenCustomer() {  }
 }
